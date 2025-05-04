@@ -1,6 +1,6 @@
-
+// tailwind.config.js
 module.exports = {
-  content: ["./index.html"],
+  content: ["./*.html"], // ← 폴더 안의 모든 HTML 파일 포함
   theme: {
     extend: {
       colors: {

@@ -62,28 +62,46 @@
       </div>
     </section>
 
-    <!-- Proposal Form -->
-    <section id="request-proposal" class="bg-black py-24 px-6 text-center" data-aos="fade-up">
-      <h2 class="text-3xl md:text-4xl font-semibold text-white mb-6">📩 Request a Proposal</h2>
-      <form action="https://formspree.io/f/xpwdpbbr" method="POST" class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-        <input type="text" name="company" placeholder="Company Name" required class="p-3 rounded bg-gray-800 text-white placeholder-gray-400 col-span-2" />
-        <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
-        <input type="email" name="email" placeholder="Email Address" required class="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
-        <input type="text" name="contact" placeholder="Contact Number (WhatsApp or WeChat)" class="p-3 rounded bg-gray-800 text-white placeholder-gray-400 col-span-2" />
-        <select name="service" required class="p-3 rounded bg-gray-800 text-white col-span-2">
-          <option value="">Select Service</option>
-          <option value="ReputeMate">ReputeMate (Review Automation)</option>
-          <option value="LeadMate">LeadMate (AI LeadBot)</option>
-          <option value="DocuBrief">DocuBrief (PDF Analyzer)</option>
-          <option value="Custom">Custom AI Solution</option>
-        </select>
-        <textarea name="message" rows="5" placeholder="Tell us your goals, problems, or ideas..." class="p-3 rounded bg-gray-800 text-white placeholder-gray-400 col-span-2"></textarea>
-        <input type="hidden" name="_redirect" value="/thankyou.html" />
-        <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition col-span-2">
-          Submit Request
-        </button>
-      </form>
-    </section>
+<!-- Proposal Form -->
+<section id="request-proposal" class="bg-black py-24 px-6 text-center" data-aos="fade-up">
+  <h2 class="text-4xl font-extrabold text-white mb-4">📩 Request a Proposal</h2>
+  <p class="text-gray-400 mb-10">Let us know what you need — we’ll tailor the solution just for you.</p>
+  <form action="https://formspree.io/f/xpwdpbbr" method="POST"
+        class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+    
+    <input type="text" name="company" placeholder="Company Name" required
+           class="bg-transparent border-b border-gray-600 focus:border-orange-500 text-white placeholder-gray-500 px-2 py-3 outline-none transition duration-300 col-span-2" />
+
+    <input type="text" name="name" placeholder="Your Name" required
+           class="bg-transparent border-b border-gray-600 focus:border-orange-500 text-white placeholder-gray-500 px-2 py-3 outline-none transition duration-300" />
+
+    <input type="email" name="email" placeholder="Email Address" required
+           class="bg-transparent border-b border-gray-600 focus:border-orange-500 text-white placeholder-gray-500 px-2 py-3 outline-none transition duration-300" />
+
+    <input type="text" name="contact" placeholder="Contact (WhatsApp or WeChat)"
+           class="bg-transparent border-b border-gray-600 focus:border-orange-500 text-white placeholder-gray-500 px-2 py-3 outline-none transition duration-300 col-span-2" />
+
+    <select name="service" required
+            class="bg-transparent border-b border-gray-600 focus:border-orange-500 text-white placeholder-gray-500 px-2 py-3 outline-none transition duration-300 col-span-2">
+      <option value="">Select Service</option>
+      <option value="ReputeMate">ReputeMate (Review Automation)</option>
+      <option value="LeadMate">LeadMate (AI LeadBot)</option>
+      <option value="DocuBrief">DocuBrief (PDF Analyzer)</option>
+      <option value="Custom">Custom AI Solution</option>
+    </select>
+
+    <textarea name="message" rows="5" placeholder="Tell us your goals, problems, or ideas..."
+              class="bg-transparent border-b border-gray-600 focus:border-orange-500 text-white placeholder-gray-500 px-2 py-3 outline-none transition duration-300 col-span-2 resize-none"></textarea>
+
+    <input type="hidden" name="_redirect" value="/thankyou.html" />
+    
+    <button type="submit"
+            class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition col-span-2">
+      Submit Request
+    </button>
+  </form>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-950 text-center py-12 text-gray-500 text-sm">

@@ -4,58 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReputeMate.AI – Review Automation</title>
-    <link href="../output.css" rel="stylesheet" />
+    <link href="/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-black text-white font-sans">
-    <!-- Hero -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center p-8 space-y-6">
-      <h1 class="text-4xl md:text-6xl font-bold text-orange-500">ReputeMate.AI</h1>
-      <p class="text-lg md:text-2xl max-w-xl">Automate Reviews. Analyze Feedback. Boost Your Reputation.</p>
-      <a href="#request-proposal" class="mt-6 bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition">Request Proposal</a>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="bg-gray-900 py-16 px-6 text-center space-y-8">
-      <h2 class="text-3xl font-semibold text-white">❗ The Problem</h2>
-      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-        Most clinics struggle to get consistent reviews. Staff forget, clients get busy, and valuable feedback is lost.
-        Without reviews, your credibility suffers — and so does your growth.
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-24 space-y-6" data-aos="fade-up">
+      <h1 class="text-5xl font-extrabold">ReputeMate.AI</h1>
+      <p class="text-xl max-w-2xl text-gray-400">
+        Review automation & AI insight platform — increase your Google/Yelp reviews, save time, and impress clients with branded flows.
       </p>
+      <div class="space-x-4">
+        <a href="https://reputemate-ai.vercel.app" target="_blank" class="inline-block bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 transition">View Demo</a>
+        <a href="/request.html" class="inline-block bg-orange-500 text-white text-lg font-bold px-8 py-4 rounded hover:bg-orange-600 transition">Request Proposal</a>
+      </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="bg-black py-16 px-6 text-center space-y-8">
-      <h2 class="text-3xl font-semibold text-white">✅ Our Solution</h2>
-      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-        ReputeMate automatically collects client feedback (score + comment), saves it to Google Sheets, summarizes insights with GPT,
-        and redirects happy clients to leave reviews on platforms like Google and Yelp.
-      </p>
+    <!-- Key Outcomes -->
+    <section class="bg-graydark py-20 px-6 text-center space-y-10" data-aos="fade-up">
+      <h2 class="text-3xl font-bold">✅ What You’ll Gain with ReputeMate</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left text-gray-300">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-white mb-2">+60% More Reviews</h3>
+          <p>Clinics see a dramatic increase in Google/Yelp reviews within weeks using our branded automation flow.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-white mb-2">Less Manual Work</h3>
+          <p>No more chasing clients for feedback. Let AI handle post-visit communication while your team focuses on care.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-white mb-2">Insightful Feedback</h3>
+          <p>Our AI summarizes sentiments in real time — helping you spot problems before they grow.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="bg-gray-900 py-16 px-6 text-center space-y-12">
-      <h2 class="text-3xl font-semibold text-white">💸 Pricing</h2>
-      <div class="max-w-3xl mx-auto space-y-6 text-gray-300">
-        <p><span class="text-white font-bold">Setup Fee:</span> $299 – Includes branded flow setup, Google Sheets integration</p>
-        <p><span class="text-white font-bold">Monthly Fee:</span> $149 – Includes automation + GPT insight report (100 reviews/month)</p>
-        <p><span class="text-white font-bold">Extra Volume:</span> $1.20 per additional review request</p>
+    <!-- Testimonial -->
+    <section class="bg-black py-20 px-6 text-center space-y-10" data-aos="fade-up">
+      <h2 class="text-3xl font-bold">🗣️ What Others Are Saying</h2>
+      <div class="max-w-3xl mx-auto text-gray-300 italic text-lg">
+        “In just one month, we saw 60% more review submissions. This platform paid for itself.”
+        <p class="mt-4 font-bold text-orange-400">— Amelia R., GlowClinic – Sydney, AU</p>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="bg-black py-16 px-6 text-center space-y-6" id="request-proposal">
-      <h2 class="text-3xl font-semibold text-white">📩 Ready to Boost Your Reviews?</h2>
-      <p class="text-lg text-gray-300 max-w-xl mx-auto">
-        Let us handle the automation while you focus on client care.
-      </p>
-      <a href="/index.html#request-proposal" class="inline-block bg-orange-500 text-white px-6 py-3 rounded hover:bg-orange-600 transition">
-        Request Proposal
+    <section class="bg-orange-500 text-black py-16 text-center" data-aos="fade-up">
+      <h2 class="text-4xl font-extrabold mb-4">Ready to Automate Your Reputation?</h2>
+      <a href="/request.html" class="inline-block bg-black text-orange-500 font-extrabold text-xl px-10 py-6 rounded-lg hover:bg-gray-900 transition">
+        Request Your Proposal
       </a>
     </section>
 
-    <!-- Back to Home -->
-    <section class="bg-gray-900 py-12 text-center">
-      <a href="/index.html" class="text-orange-400 hover:underline text-lg">← Back to Home</a>
-    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-center py-12 text-gray-500 text-sm">
+      © 2025 NoeVeOrBit. All rights reserved. <br />
+      <a href="mailto:orbit@noeveorbit.com" class="hover:underline text-orange-400">orbit@noeveorbit.com</a>
+    </footer>
+    <script>AOS.init()</script>
   </body>
 </html>
